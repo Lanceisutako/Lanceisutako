@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form - Bachelor of Science</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            background-image: url("Background.png");
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            opacity:70%;
+            box-shadow: 5px 5px;
+            border-radius: 20px;
+        }
+        h1 {
+            text-align: center;
+            transition:1s all ease;
+        }
+        h1:hover{
+            color:gold;
+            text-shadow: black -4px 0, white 4px 0;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="Address"], select {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .back{
+          text-decoration: none;
+          color: #fff;
+          background: black;
+          padding: 10px;
+          font-family: Verdana;
+          opacity: 30%;
+          transition: 1s all ease;
+          
+        }
+        .back:hover{
+          opacity: 100%;
+          border-radius: 30px;
+        }
+        .back:active{
+          opacity: 100%;
+          border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <a class="back" href="Web2.html">Go Back</a>
+        <h1>Application Form - Bachelor of Science</h1>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Student Name">
+
+            <label for="email">Email or Phone number:</label>
+            <input type="email" id="email" name="Email or Phone number" required placeholder="*****@.com/09*********">
+            <label for="Address">Address:</label>
+            <input type="Address" id="Address" name="Address" required placeholder="Type your Address">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="program">Program:</label>
+            <select id="program" name="program">
+                <option value="bsc-computer-science">BSc in Computer Science</option>
+                <option value="bsc-mathematics">BSc in Mathematics</option>
+                <option value="bsc-physics">BSc in Physics</option>
+                <option value="Anti-Selos">BSc in Anti Selos</option>
+            </select>
+            <h4>Gender</h4> <b>Male</b><input type="radio"><b>Female</b> <input type="radio">
+            <br>
+            <br>
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
