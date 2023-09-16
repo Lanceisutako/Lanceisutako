@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-image: url('Doorbg.png');
+        background-size: cover;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        transition: 0.5s all ease;
+        
+      }
+      .container{
+        background: #0000007a;
+        
+        align-content: space-between;
+        position: fixed;
+        width: min(100%, 100%);
+        height: 90px;
+        opacity: 90%;
+        position: relative;
+       top: 100px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transition: 0.5s all ease;
+        
+      }
+      .container:hover{
+        height: 107px;
+      }
+      a:hover{
+        
+        background-color: gold;
+        color: red;
+        padding: 15px;
+        justify-content: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .title{
+        text-shadow: red -3px 0, blue 1px 0;
+      }
+      .overflow{
+        display: flex;
+        flex: wrap;
+        
+        text-align: justify;
+        background: rgba(0,9,245,0.603);
+  color: white;
+  padding: 5px;
+  width: min(95%, 100%);
+  position: relative;
+  left: 3px;
+  top: 20px;
+  height: 100px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+      }
+      img{
+        position: relative;
+        
+        width: 100%;
+        height: 200px;
+        opacity: 100%;
+      }
+      .container{
+        opacity: 100%;
+      }
+    </style>
+</head>
+<body>
+  
+<center>
+    <h1 class="title">Welcome to Suzume</h1>
+    </center>
+    <video width="100%" height="240" controls autoplay>
+  <source src="trailer.mp4" type="video/mp4">
+    </video>
+    <p class="overflow">
+      Suzume (Japanese: すずめの戸締まり, Hepburn: Suzume no Tojimari, lit. 'Suzume's Locking Up') is a 2022 Japanese animated coming-of-age fantasy adventure film written and directed by Makoto Shinkai, produced by CoMix Wave Films, and distributed by Toho. The film follows 17-year-old high school girl Suzume Iwato and young stranger Souta Munakata, who team up to prevent a series of disasters across Japan by sealing doors from the colossal, supernatural worm that causes earthquakes after being released.
+    </p>
+    <div class="container">
+    <nav class="set">
+      <a class="one" href="Suzume.html">Home</a>
+      <a class="two" href="#">About</a>
+      <a class="three" href="#">Contact</a>
+    </nav>
+  </div>
+</body>
+</html>
